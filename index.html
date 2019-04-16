@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Coding Challenge 1 - rlang</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <div id="container">
+        <h1>Coding Challenge V1 - rlang</h1>
+
+        <label for="book">URL to Textfile to translate</label>
+        <input type="text" name="book" id="book" value="http://entwicklungsbereich.at/alsosprachzarathustra.txt" /><br />
+
+        <label for="replacementChar">Replacement Char</label>
+        <input type="text" id="replacementChar" value="r"/><br />
+
+        <label for="vowels">Vowels</label>
+        <input type="text" id="vowels" value="aeiouäöüAEIOUÄÖÜ"/><br />
+
+        <label for="noReplacementProximity">No Replacement Proximity</label>
+        <input type="text" id="noReplacementProximity" value="3"/><br />
+
+        <label for="forbiddenEndings">Forbidden Endings (comma separated)</label>
+        <input type="text" id="forbiddenEndings" value="en"/><br />
+
+        <label for="noReplacementAfterDoubleVowel">No Replacement after double vowel ( 1 = true, 0 = false)</label>
+        <input type="text" id="noReplacementAfterDoubleVowel" value="1"/><br />
+
+        <br />
+
+        <button onclick="loadBook();">Load Book</button>
+        <button onclick="runTranslation();">Run Translation</button>
+        <button onclick="runTests();">Run Tests</button>
+
+
+
+
+        <div id="output"></div>
+    </div>
+</body>
+</html>
